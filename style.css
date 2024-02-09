@@ -1,0 +1,139 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+.container{
+    display: flex;
+    background-image: linear-gradient(rgba(241, 213, 212, 0.331),rgba(71, 83, 95, 0.75)),url(img/bg2.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    min-width: 100%;
+    position: absolute;
+    flex-direction: column;
+}
+nav{
+   background-color: #333;
+   height: 40px;
+   width: 100%;
+   padding: 5px;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-around;
+   color: #fff;
+}
+nav ul{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+nav ul li{
+    justify-content: space-between;
+    margin-left: 10px;
+    align-items: center;
+    list-style: none;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    margin-left: 10px;
+    border-left: 2px solid brown;
+    padding-left: 5px;
+}
+.logo{
+    padding: 5px;
+    cursor: pointer;
+}
+.btn{
+    padding: 5px 15px;
+    background-color: brown;
+    border: 2px solid #fff;
+    border-radius: 50px;
+    color: #fff;
+    transition: .3s ease-in;
+}
+.btn:hover{
+    color: brown;
+    background-color: #fff;
+    border-color: brown;
+}
+.btn a:hover{
+    color: brown;
+}
+.donate{
+    width: 300px;
+    height: 200px;
+    padding: 10px;
+    background:rgba(73, 72, 72, 0.8);
+    color: #fff;
+    position: relative;
+    top: 70px;
+    left: 80px;
+    text-align: justify;
+    line-height: 30px;
+    animation: slide 1s ease-in;
+    border-radius: 5px;
+}
+@keyframes slide {
+    0%{transform: translateX(-300px);}
+    100%{transform: translateX(0px);}
+}
+h2{
+    color: #fff;
+}
+h2 span{
+    color: brown;
+}
+
+hr{
+    background-color: brown;
+    width: 50%;
+    height: 2px;
+    border: none;
+}
+.btn a{
+    color: #fff;
+    text-decoration: none;
+}
+.info{
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(3, 1fr);
+    width: 100%;
+    background-color: #fff;
+    padding: 5px;
+    position: relative;
+    top: calc(32.5vh - 40px);
+    height: 200px;
+    padding-left: 80px;
+    padding-right: 80px;
+}
+.box{
+    width: 300px;
+    background: #f8e2e2;
+    height: fit-content;
+}
+h3{
+    text-align: center;
+    background-color: brown;
+    color: #fff;
+    padding: 5px;
+    height: 50px;
+    position: relative;
+    top: -55px;
+}
+.box_info{
+    padding: 10px;
+    text-align: justify;
+}
+footer{
+    text-align: center;
+    animation: footer 10s linear infinite;
+}
+@keyframes footer {
+    0%{transform: translateX(-300px);}
+    100%{transform: translateX(1000px);}
+}
